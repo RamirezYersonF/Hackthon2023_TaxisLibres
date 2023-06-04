@@ -9,7 +9,8 @@ html {
 }
 
 :root {
-    --background_menu_mobile: #c3dc00;
+    --background_iconomenu_mobile: #c3dc00;
+    --background_menudespeglabe: rgba(16, 26, 51, 255);
     --black: #2A2D2E;
 }
 
@@ -23,11 +24,12 @@ html {
 }
 
 .bars__menu--background {
-    background-color: var(--background_menu_mobile);
+    background-color: var(--background_iconomenu_mobile);
     height: 3rem;
     width: 3rem;
     display: grid;
     justify-content: center;
+    border-radius: 20rem;
 }
 
 .bars__menu {
@@ -35,6 +37,7 @@ html {
     height: 2rem;
     cursor: pointer;
     display: grid;
+
 }
 
 .bars__menu span {
@@ -49,6 +52,9 @@ html {
 
 .activeline1__bars-menu {
     transform: rotate(45deg) translate(-2px, 1px);
+    position: relative;
+    left: 0.5rem;
+    top: 2px;
 }
 
 .activeline2__bars-menu {
@@ -57,8 +63,56 @@ html {
 
 .activeline3__bars-menu {
     transform: rotate(-45deg) translate(1px, -3px);
+    position: relative;
+    left: 0.5rem;
+    top: 2px;
+    width: 20%;
 }
 
 .nav__mobile {
+    position: absolute;
+    top: 9rem;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: var(--background_menudespeglabe);
+    padding: 2rem 0 1rem 0;
+    transform: translateY(-100vh);
+    transition: all 0.5s ease-in-out;
+}
+
+.nav__mobile .container__nav {
+    max-width: 25rem;
+    margin: 0 auto;
+}
+
+.submenu__nav {
     display: none;
+}
+
+.nav__ul>.container__nav>li {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.nav__ul>.container__nav>li>.material-symbols-outlined {
+    color: #fff;
+}
+
+.nav__ul>.container__nav>li>a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 2rem;
+    height: 6rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    padding-left: 7rem;
+}
+
+.activate__menu_js {
+    transform: translateY(0vh);
+    transition: all 0.5s ease-in-out;
 }
