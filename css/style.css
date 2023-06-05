@@ -13,6 +13,8 @@ html {
     --background_menudespeglabe: rgba(16, 26, 51, 255);
     --black: #2A2D2E;
     --footer: #242525;
+    --line: #c6d53a;
+    --background_information: #021a4b;
 }
 
 /*Header*/
@@ -187,6 +189,69 @@ button:hover {
 }
 
 /*img hackathon*/
+/*Noticias*/
+.container__news,
+.container__descriptions-news {
+    width: 100%;
+    height: 100%;
+    margin: 3rem 0;
+}
+
+.container__size--news,
+.container__title--descriptions {
+    max-width: 980px;
+    min-width: 320px;
+    margin: 0 auto;
+    padding-left: 20px;
+}
+
+.title__news {
+    font-size: 2rem;
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    letter-spacing: 2px;
+    margin: 2rem 0;
+    text-align: left;
+    color: var(--black);
+    font-family: 'Roboto', sans-serif;
+}
+
+.title__news::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    bottom: -20px;
+    left: 0;
+    transform: scale(0.4) skewY(-20deg) rotate(20deg);
+    background-color: var(--line);
+}
+
+/*Noticias*/
+
+/*Descripcion de la noticia*/
+.information__descriptions {
+    border-left: 0.4rem var(--line) solid;
+    padding: 0 1rem;
+    font-size: 3rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+}
+
+/*Descripcion de la noticia*/
+/*Informacion del evento*/
+.container__information--hackathon {
+    background-color: var(--background_information);
+    padding: 1rem;
+}
+
+.container__size--information h2 {
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*Informacion del evento*/
 
 /*footer*/
 .footer {
