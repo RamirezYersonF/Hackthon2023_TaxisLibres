@@ -11,12 +11,25 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap"
         rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Hackathon Taxis Libres 2023</title>
 </head>
 
 <body>
     <?php include("./templates/header.php") ?>
+    <section class="container__hackathon">
+        <div class="container__description--hackathon">
+            <h1 class="title__hackathon--container">10 AL 12 DE JUNIO DEL 2023</h1>
+            <button>Inscripciones</button>
+        </div>
+        <section class="img_hackathon">
+
+        </section>
+    </section>
+    <br><br>
+    <?php include("./templates/footer.php") ?>
 </body>
 
 </html>
