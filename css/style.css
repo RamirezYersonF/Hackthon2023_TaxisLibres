@@ -631,6 +631,60 @@ button:hover {
 }
 
 /*patrocinadores*/
+/*Inscripcion - formulario*/
+.container__form {
+    width: 100%;
+    height: 100%;
+}
+
+form {
+    max-width: 920px;
+    min-width: 320px;
+    margin: 0 auto;
+    padding: 4rem 3rem 8rem;
+    background-color: rgba(234, 235, 235, 255);
+
+}
+
+form h1 {
+    text-align: center;
+    letter-spacing: 2px;
+    padding: 2rem 0;
+    font-size: 3rem;
+    color: var(--background_information);
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-size: 2rem;
+    padding: 2rem 0;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+input[type="date"] {
+    width: 100%;
+    padding: 1rem;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+input[type="submit"] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+
+/*Inscripcion - formulario*/
 /*footer*/
 .footer {
     display: block;
@@ -701,6 +755,20 @@ button:hover {
             "img5 img5  img5"
             "img6 img7 img7"
             "img8 img8 img8";
+    }
+}
+
+@media (max-width: 600px) {
+    form {
+        max-width: 100%;
+    }
+
+    label,
+    input,
+    select {
+        width: 100%;
+        display: block;
+        margin-bottom: 10px;
     }
 }
 

@@ -231,6 +231,52 @@
             <img src="./img/secretaria_movilidad.jpg" alt="Secretaria de movilidad">
         </section>
        </section>
+       <section class="container__form">
+        <form id="formulario">
+            <h1>Formulario de Inscripción</h1>
+            <label for="tipoDocumento">Tipo de Documento:</label>
+            <select id="tipoDocumento" name="tipoDocumento" required>
+              <option value="DNI">Tipo de indentificación</option>
+              <option value="DNI">Cedula</option>
+              <option value="DNI">Cedula de Extranjeria</option>
+              <option value="Pasaporte">Tarjeta de Identidad</option>
+              <option value="Carnet de Identidad">NUIP</option>
+            </select>
+        
+            <label for="numeroDocumento">Número de Documento:</label>
+            <input type="text" id="numeroDocumento" name="numeroDocumento" required>
+        
+            <label for="nombres">Nombres:</label>
+            <input type="text" id="nombres" name="nombres" required>
+        
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" id="apellidos" name="apellidos" required>
+        
+            <label for="correo">Correo Electrónico:</label>
+            <input type="email" id="correo" name="correo" required>
+        
+            <label for="pais">País:</label>
+            <input type="text" id="pais" name="pais" required>
+        
+            <label for="municipio">Municipio:</label>
+            <input type="text" id="municipio" name="municipio" required>
+        
+            <label for="ciudad">Ciudad:</label>
+            <input type="text" id="ciudad" name="ciudad" required>
+        
+            <label for="genero">Género:</label>
+            <select id="genero" name="genero" required>
+              <option value="Masculino">Masculino</option>
+              <option value="Femenino">Femenino</option>
+              <option value="Femenino">Transgénero</option>
+              <option value="Otro">No registra</option>
+            </select>
+            <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+            <input type="date" id="fechaNacimiento" name="fechaNacimiento" required>
+       </section>
+       <section class="container__questions">
+        
+       </section>
     <footer class="footer">
         <section class="contenedor__img--footer">
             <img src="https://www.taxislibres.com.co/public/imagesNew/footer/logo-taxislibres.webp"
