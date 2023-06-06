@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 html {
@@ -14,7 +15,7 @@ html {
     --black: #2A2D2E;
     --footer: #242525;
     --line: #c6d53a;
-    --background_information: #021a4b;
+    --background_information: #6480c8;
 }
 
 /*Header*/
@@ -242,17 +243,194 @@ button:hover {
 /*Descripcion de la noticia*/
 /*Informacion del evento*/
 .container__information--hackathon {
-    background-color: var(--background_information);
-    padding: 1rem;
+    max-width: 980px;
+    min-width: 320px;
+    margin: 0 auto;
 }
 
 .container__size--information h2 {
     color: #fff;
     font-family: 'Roboto', sans-serif;
+    padding: 1rem 2rem;
+    color: var(--background_information);
+    font-size: 2rem;
+    text-align: justify;
 }
 
 /*Informacion del evento*/
+/*Galeria de imagenes del evento*/
+.container__hackathon--gallery {
+    width: 100%;
+    height: 100%;
+    padding: 2rem 0;
+}
 
+.container_title--gallery {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    padding: 3rem 0;
+    font-size: 3rem;
+    position: relative;
+    z-index: 100;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+
+.gallery {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 160px;
+    gap: .8em;
+    grid-template-areas:
+        "img1 img1 img2 img3"
+        "img1 img1 img4 img4"
+        "img5 img5 img6 img7"
+        "img5 img5 img8 img8";
+    max-width: 980px;
+    margin: 0 auto;
+    min-width: 320px;
+    padding: 2rem;
+}
+
+
+.gallery__img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.gallery__picture--g1 {
+    grid-area: img1;
+}
+
+.gallery__picture--g2 {
+    grid-area: img2;
+}
+
+.gallery__picture--g3 {
+    grid-area: img3;
+}
+
+.gallery__picture--g4 {
+    grid-area: img4;
+}
+
+.gallery__picture--g5 {
+    grid-area: img5;
+}
+
+.gallery__picture--g6 {
+    grid-area: img6;
+}
+
+.gallery__picture--g7 {
+    grid-area: img7;
+}
+
+.gallery__picture--g8 {
+    grid-area: img8;
+}
+
+.gallery__picture {
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery__picture::before {
+    content: "2022";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(195, 220, 0, 0.5);
+    transform: scale(0);
+    transition: transform 0.6s ease-in-out, opacity 0.6s;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 3rem;
+
+}
+
+.gallery__picture:hover::before {
+    transform: scale(100%) rotate(360deg);
+}
+
+.container__size--title {
+    background-color: var(--background_iconomenu_mobile);
+    max-width: 940px;
+    margin: 0 auto;
+}
+
+/*Galeria de imagenes del evento*/
+/*Participantes*/
+.container__cube {
+    padding-top: 200px;
+    width: 50%;
+    margin: auto auto;
+    text-align: center;
+    display: block;
+}
+
+.cube__faces {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: rotate 5s infinite linear;
+    transform: rotate(100px) translateZ(100px);
+}
+
+.face {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+}
+
+.front {
+    transform: translateZ(100px);
+}
+
+.back {
+    transform: rotateY(180deg) translateZ(100px);
+}
+
+.right {
+    transform: rotateY(90deg) translateZ(100px);
+}
+
+.left {
+    transform: rotateY(-90deg) translateZ(100px);
+}
+
+.top {
+    transform: rotateX(90deg) translateZ(100px);
+}
+
+.bottom {
+    transform: rotateX(-90deg) translateZ(100px);
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotateX(0deg) rotateY(0deg);
+    }
+
+    100% {
+        transform: rotateX(360deg) rotateY(360deg);
+    }
+}
+
+/*participantes*/
 /*footer*/
 .footer {
     display: block;
@@ -308,3 +486,33 @@ button:hover {
 }
 
 /*footer*/
+
+/*responsive*/
+@media(max-width: 750px) {
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+            "img1 img1 img1"
+            "img2 img3 img3"
+            "img4 img4 img4"
+            "img5 img5 img5"
+            "img5 img5  img5"
+            "img6 img7 img7"
+            "img8 img8 img8";
+    }
+}
+
+@media(max-width:400px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 2rem;
+        grid-template-areas:
+            "img1 img1"
+            "img2 img3"
+            "img4 img4"
+            "img5 img5"
+            "img5 img5"
+            "img6 img7"
+            "img8 img8";
+    }
+}

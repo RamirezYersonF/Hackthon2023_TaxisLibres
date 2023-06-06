@@ -36,6 +36,7 @@
     </section>
     <section class="container__information--hackathon">
         <section class="container__size--information">
+
             <h2>Únete a nuestra Hackathon virtual de Taxis Libres y sé parte del impulso a la reactivación económica en
                 Colombia. En este evento, buscamos soluciones innovadoras para desafíos reales en el ámbito de la
                 movilidad en el país.</h2>
@@ -48,7 +49,52 @@
                 experiencia.</h2>
         </section>
     </section>
+    <section class="container__hackathon--gallery">
+        <div class="container__size--title">
+            <h1 class="container_title--gallery">Galeria de la Hackathon</h1>
+        </div>
+        <section class="gallery">
+            <figure class="gallery__picture gallery__picture--g1">
+                <img src="https://img.lalr.co/cms/2021/05/28181950/WhatsApp-Image-2021-05-28-at-5.49.42-PM-1.jpeg?size=xl" class="gallery__img" alt="galeria de imagenes de las hackathon">
+            </figure>
+            <figure class="gallery__picture gallery__picture--g2">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtCKpa4cMA6IWo71Dgla6Almt-q_4sNfrQag" class="gallery__img" alt="galeria de imagenes de las hackathon">
+            </figure>
+            <figure class="gallery__picture gallery__picture--g3">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3eIPhWqfPAE_dgbVRSElNlmfZvViwZw7mxA" alt="galeria de imagenes de las hackathon">
+            </figure>
+            <figure class="gallery__picture gallery__picture--g4">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcpSl3V5Q8NEisQdRg1tG40Xv8Pyh0XPqJ3w" class="gallery__img" alt="galeria de imagenes de las hackathon">
+            </figure>
+            <figure class="gallery__picture gallery__picture--g5">
+                <img src="https://diariolaeconomia.com/media/k2/items/cache/0b8af734c0a047336a1769996c53422b_XL.jpg" class="gallery__img" alt="galeria de imagenes de las hackathon">
+            </figure>
+            <figure class="gallery__picture gallery__picture--g6">
+                <img src="https://www.taxislibres.com.co/public/imagesNew/tiempo/WhatsApp-para-pedir-taxi.jpg" class="gallery__img" alt="galeria de imagenes de las hackathon">
+            </figure>
+            <figure class="gallery__picture gallery__picture--g7">
+                <img src="https://www.taxislibres.com.co/public/imagesNew/blog/post-hackathon.jpg" class="gallery__img" alt="galeria de imagenes de las hackathon">
+            </figure>
+            <figure class="gallery__picture gallery__picture--g8">
+                <img src="https://i.ytimg.com/vi/mcxaBBvIqgU/maxresdefault.jpg" class="gallery__img" alt="galeria de imagenes de las hackathon">
+            </figure>
+        </section>
+    </section>
+    <section class="container__hackathon--cube">
+        <div class="container__cube">
+            <div class="cube__faces">
+                <div class="face front"> <img src="./img/programador.png" alt="Participantes programadores"></div>
+                <div class="face back"><img src="./img/asesor-financiero.png" alt="participantes asesores"></div>
+                <div class="face right"> <img src="./img/ciencia-de-los-datos.png" alt="participantes cientifico de datos"></div>
+                <div class="face left"> <img src="./img/disenador-grafico.png" alt="diseñadores graficos"></div>
+                <div class="face top"><img src="./img/economista.png" alt="economista"></div>
+                <div class="face bottom"><img src="./img/marketing-de-contenidos.png" alt="Marketing"></div>
+            </div>
+        </div>
+    </section>
+
     <br><br>
+    <script src="./js/main.js"></script>
     <?php include("./templates/footer.php") ?>
 </body>
 

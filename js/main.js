@@ -1,5 +1,4 @@
 /*Home menu icon*/
-
 document.querySelector(".bars__menu").addEventListener("click", animateBars);
 const line1__bars = document.querySelector(".line1__bars-menu");
 const line2__bars = document.querySelector(".line2__bars-menu");
@@ -12,11 +11,3 @@ function animateBars() {
 }
 /*Home menu icon*/
 
-/*dropdown menu animation*/
-const openmenu = document.querySelector(".nav__mobile");
-
-openmenu.addEventListener('click', toggleMenu);
-
-function toggleMenu() {
-    openmenu.classList.toggle("activate__menu_js");
-}
