@@ -29,6 +29,18 @@
             <i class="fa-brands fa-youtube"></i>
             <i class="fa-brands fa-tiktok"></i>
         </section>
+        <section class="container__hackathon--cube">
+            <div class="container__cube">
+                <div class="cube__faces">
+                    <div class="face front"><img class="cube__icono" src="https://www.taxislibres.com.co/public/imagesNew/logo-escritorio.webp" alt=""></div>
+                    <div class="face back"><img class="cube__icono" src="https://www.taxislibres.com.co/public/imagesNew/logo-escritorio.webp" alt=""></div>
+                    <div class="face right"><img class="cube__icono" src="https://www.taxislibres.com.co/public/imagesNew/logo-escritorio.webp" alt=""></div>
+                    <div class="face left"><img class="cube__icono" src="https://www.taxislibres.com.co/public/imagesNew/logo-escritorio.webp" alt=""></div>
+                    <div class="face top"><img class="cube__icono" src="https://www.taxislibres.com.co/public/imagesNew/logo-escritorio.webp" alt=""></div>
+                    <div class="face bottom"><img class="cube__icono" src="https://www.taxislibres.com.co/public/imagesNew/logo-escritorio.webp" alt=""></div>
+                </div>
+            </div>
+        </section>
         <p class="copyright__footer">@2023 Taxis Libres.</p>
     </footer>
 </body>

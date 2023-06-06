@@ -272,7 +272,6 @@ button:hover {
     padding: 3rem 0;
     font-size: 3rem;
     position: relative;
-    z-index: 100;
     text-align: center;
     letter-spacing: 3px;
 }
@@ -371,53 +370,69 @@ button:hover {
 }
 
 /*Galeria de imagenes del evento*/
-/*Participantes*/
+/*cubo*/
 .container__cube {
-    padding-top: 200px;
     width: 50%;
-    margin: auto auto;
+    margin: auto;
     text-align: center;
-    display: block;
+    display: grid;
+    justify-content: end;
+    position: absolute;
+    top: 60rem;
+    left: 45%;
+    position: fixed;
 }
 
 .cube__faces {
-    width: 200px;
-    height: 200px;
+    width: 50px;
+    height: 50px;
     position: relative;
     transform-style: preserve-3d;
     animation: rotate 5s infinite linear;
-    transform: rotate(100px) translateZ(100px);
+    transform: rotateZ(100px) translateZ(100px);
 }
 
 .face {
     position: absolute;
-    width: 200px;
-    height: 200px;
+    width: 50px;
+    height: 50px;
     background-size: cover;
 }
 
+.face .cube__icono {
+    position: relative;
+    top: 15px;
+    width: 50px;
+}
+
 .front {
-    transform: translateZ(100px);
+    transform: translateZ(25px);
+    background-color: #b2bd17;
 }
 
 .back {
-    transform: rotateY(180deg) translateZ(100px);
+    transform: rotateY(180deg) translateZ(25px);
+    background-color: #b2bd17;
 }
 
 .right {
-    transform: rotateY(90deg) translateZ(100px);
+    transform: rotateY(90deg) translateZ(25px);
+    background-color: #b0b1ae;
 }
 
 .left {
-    transform: rotateY(-90deg) translateZ(100px);
+    transform: rotateY(-90deg) translateZ(25px);
+    background-color: #091f48;
 }
 
 .top {
-    transform: rotateX(90deg) translateZ(100px);
+    transform: rotateX(90deg) translateZ(25px);
+    background-color: #505526;
 }
 
 .bottom {
-    transform: rotateX(-90deg) translateZ(100px);
+    transform: rotateX(-90deg) translateZ(25px);
+    background-color: #2e2e2e;
 }
 
 @keyframes rotate {
@@ -430,12 +445,137 @@ button:hover {
     }
 }
 
+/*cubo*/
 /*participantes*/
+.container__competitor {
+    width: 100%;
+    height: 100%;
+}
+
+.title__competitor {
+    text-align: center;
+    font-size: 3rem;
+    letter-spacing: 0.8rem;
+    font-weight: bold;
+    padding: 0 0 2rem 0;
+}
+
+.container_type--competitor {
+    display: flex;
+    justify-content: space-around;
+    max-width: 940px;
+    min-width: 320px;
+    margin: 0 auto;
+}
+
+
+.container__description--competitor p {
+    font-size: 1.5rem;
+    padding: 1rem;
+    text-align: justify;
+}
+
+/*participantes*/
+
+/*Premios*/
+.container__title--awards {
+    padding: 2rem 0;
+    width: 100%;
+    height: 100%;
+}
+
+.container__title--awards h1 {
+    text-align: center;
+    color: var(--black);
+    letter-spacing: 2px;
+    padding: 1rem 0 3rem 0;
+    font-size: 3rem;
+}
+
+.container__card_awards {
+    display: flex;
+    overflow: scroll;
+    justify-content: space-between;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    max-width: 940px;
+    min-width: 320px;
+    margin: 0 auto;
+
+}
+
+.card {
+    position: relative;
+    scroll-snap-align: center;
+    width: 70%;
+    min-width: 230px;
+    max-width: 300px;
+    height: 250px;
+    padding: 0 15px;
+    background-color: var(--just-white);
+    border-radius: 15px;
+    cursor: pointer;
+
+}
+
+.card__inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.8s;
+}
+
+.card:hover .card__inner {
+    transform: rotateY(180deg);
+}
+
+.card__front,
+.card__back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.card__front {
+    background-color: var(--black);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 24px;
+}
+
+.card__front h2 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.card__back {
+    background-color: #f9f9f9;
+    transform: rotateY(180deg);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card__back h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.card__back p {
+    margin: 5px 0;
+}
+
+/*Premios*/
 /*footer*/
 .footer {
     display: block;
     background-color: var(--footer);
     justify-content: center;
+    position: relative;
 }
 
 .contenedor__img--footer {
@@ -488,6 +628,7 @@ button:hover {
 /*footer*/
 
 /*responsive*/
+
 @media(max-width: 750px) {
     .gallery {
         grid-template-columns: repeat(3, 1fr);

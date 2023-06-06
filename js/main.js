@@ -10,4 +10,3 @@ function animateBars() {
     line3__bars.classList.toggle("activeline3__bars-menu");
 }
 /*Home menu icon*/
-
