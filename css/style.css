@@ -476,7 +476,38 @@ button:hover {
 }
 
 /*participantes*/
+/*Carrosel*/
+.carousel {
+    width: 200px;
+    margin: auto;
+    position: relative;
+}
 
+.carousel__container {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+}
+
+.carousel__item {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.carousel__buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.carousel__button {
+    margin: 0 5px;
+}
+
+/*Carrosel*/
 /*Premios*/
 .container__title--awards {
     padding: 2rem 0;
