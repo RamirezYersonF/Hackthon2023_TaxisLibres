@@ -14,12 +14,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="shortcut icon" href="https://www.taxislibres.com.co/public/imagesNew/logo-escritorio.webp" type="image/x-icon">
+    <link rel="shortcut icon" href="https://www.taxislibres.com.co/public/images/logo-app-tl.png" type="image/x-icon">
         <title>Hackathon Taxis Libres 2023</title>
 </head>
 
 <body>
     <header class="header__hackathon">
+        <section class="container__header">
         <img class="header__img" src="https://www.taxislibres.com.co/public/imagesNew/logo-escritorio.webp"
             alt="Logo de taxis libres">
         <section class="bars__menu--background">
@@ -32,50 +33,27 @@
         <nav class="nav__mobile">
             <ul class="nav__ul">
                 <section class="container__nav">
-                    <li><a href="#">Nosotros</a><span class="material-symbols-outlined">expand_more</span></li>
-                    <ul class="submenu__nosotros submenu__nav">
-                        <li><a href="#">Emisora Taxis Libres</a></li>
-                    </ul>
-                    <li><a href="#">Viajeros</a><span class="material-symbols-outlined">expand_more</span></li>
-                    <ul class="submenu__viajeros submenu__nav">
-                        <li><a href="#">Descarga la App viajeros</a></li>
-                        <li><a href="#">Taxis por WhatsApp - Nacional</a></li>
-                    </ul>
-                    <li><a href="#">Empresas</a></li>
-                    <li><a href="#">Vinculados </a><span class="material-symbols-outlined">expand_more</span></li>
-                    <ul class="submenu__vinculados submenu__nav">
-                        <li><a href="#">Condutores</a></li>
-                        <li><a href="#">Propietaros</a></li>
-                        <li><a href="#">Beneficios</a></li>
-                        <li><a href="#">Mi perfil</a></li>
-                        <li><a href="#">Taxis disponibles</a></li>
-                    </ul>
-                    <li><a href="#">Ciudades</a><span class="material-symbols-outlined">expand_more</span></li>
-                    <ul class="submenu__ciudades submenu__nav">
-                        <li><a href="#">Bogotá</a></li>
-                        <li><a href="#">Cali</a></li>
-                        <li><a href="#">Bucaramanga</a></li>
-                        <li><a href="#">Medellín</a></li>
-                        <li><a href="#">Cúcuta</a></li>
-                        <li><a href="#">Manizales</a></li>
-                    </ul>
-                    <li><a href="#">Más </a><span class="material-symbols-outlined">expand_more</span></li>
-                    <ul class="submenu__mas submenu__nav">
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Trabajos disponibles</a></li>
-                        <li><a href="#">Sedes Bogotá</a></li>
-                        <li><a href="#">Centro de conocimiento</a></li>
-                        <li><a href="#">Postcast</a></li>
-                    </ul>
-                    <li><a href="#">Ayuda</a></li>
+                    <li><a href="#hackathon">Hackathon</a></li>
+                    <li><a href="#galeria">Galeria</a></li>
+                    <li><a href="#formulario">Formulario</a></li>
+                    <li><a href="#preguntas">Preguntas Frecuentes</a></li>
                 </section>
             </ul>
         </nav>
+        <ul class="nav__ul--desktop">
+            <section class="container__desktop">
+                <li><a href="#hackathon">Hackathon</a></li>
+                <li><a href="#galeria">Galeria</a></li>
+                <li><a href="#formulario">Formulario</a></li>
+                <li><a href="#preguntas">Preguntas Frecuentes</a></li>
+            </section>
+        </ul>
+    </section>
     </header>
     <section class="container__hackathon">
         <div class="container__description--hackathon">
             <h1 class="title__hackathon--container">10 AL 12 DE JUNIO DEL 2023</h1>
-            <button class="btn__hackathon">Inscripciones</button>
+            <a href="#formulario" class="btn__hackathon"  id="hackathon">Inscripciones</a>
         </div>
         <section class="img_hackathon">
 
@@ -109,7 +87,7 @@
     </section>
     <section class="container__hackathon--gallery">
         <div class="container__size--title">
-            <h1 class="container_title--gallery">Galeria de la Hackathon</h1>
+            <h1 class="container_title--gallery" id="galeria">Galeria de la Hackathon</h1>
         </div>
         <section class="gallery">
             <figure class="gallery__picture gallery__picture--g1">
@@ -232,7 +210,7 @@
             <img src="./img/secretaria_movilidad.jpg" alt="Secretaria de movilidad">
         </section>
        </section>
-       <section class="container__form">
+       <section class="container__form" id="formulario">
         <form id="formulario">
             <h1>Formulario de Inscripción</h1>
             <label for="tipoDocumento">Tipo de Documento:</label>
@@ -275,8 +253,9 @@
             </select>
             <label for="fechaNacimiento">Fecha de Nacimiento:</label>
             <input type="date" id="fechaNacimiento" name="fechaNacimiento" required>
+            <input type="submit" class="btn__form" value="Enviar">
        </section>
-       <section class="container__questions">
+       <section class="container__questions" id="preguntas">
         <h2 class="title__questions">Preguntas Frecuentes</h2>
         <div class="accordion">¿Que es una hackathon?</div>
         <div class="panel">
@@ -302,6 +281,7 @@
             </div>
        </section>
     <footer class="footer">
+        <section class="container__footer">
         <section class="contenedor__img--footer">
             <img src="https://www.taxislibres.com.co/public/imagesNew/footer/logo-taxislibres.webp"
                 alt="Logo taxis libres">
@@ -336,6 +316,7 @@
                 </div>
             </div>
         </section>
+    </section>
         <p class="copyright__footer">@2023 Taxis Libres.</p>
     </footer>
     <script src="./js/main.js"></script>    
