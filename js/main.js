@@ -10,27 +10,18 @@ function animateBars() {
     line3__bars.classList.toggle("activeline3__bars-menu");
 }
 /*Home menu icon*/
-/*Carrosuel*/
-const carouselContainer = document.querySelector('.carousel__container');
-const prevButton = document.querySelector('.carousel__button--prev');
-const nextButton = document.querySelector('.carousel__button--next');
+/*Acordion*/
+const acc = document.getElementsByClassName("accordion");
+let i;
 
-let position = 0;
-const itemWidth = 200;
-const totalItems = document.querySelectorAll('.carousel__item').length;
-
-prevButton.addEventListener('click', () => {
-    position += itemWidth;
-    if (position > 0) {
-        position = -itemWidth * (totalItems - 1);
-    }
-    carouselContainer.style.transform = `translateX(${position}px)`;
-});
-
-nextButton.addEventListener('click', () => {
-    position -= itemWidth;
-    if (position < -itemWidth * (totalItems - 1)) {
-        position = 0;
-    }
-    carouselContainer.style.transform = `translateX(${position}px)`;
-});
+for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+            panel.style.display = "none";
+        } else {
+            panel.style.display = "block";
+        }
+    });
+}

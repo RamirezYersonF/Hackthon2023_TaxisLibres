@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="https://www.taxislibres.com.co/public/imagesNew/logo-escritorio.webp" type="image/x-icon">
         <title>Hackathon Taxis Libres 2023</title>
 </head>
 
@@ -74,7 +75,7 @@
     <section class="container__hackathon">
         <div class="container__description--hackathon">
             <h1 class="title__hackathon--container">10 AL 12 DE JUNIO DEL 2023</h1>
-            <button>Inscripciones</button>
+            <button class="btn__hackathon">Inscripciones</button>
         </div>
         <section class="img_hackathon">
 
@@ -236,11 +237,12 @@
             <h1>Formulario de Inscripción</h1>
             <label for="tipoDocumento">Tipo de Documento:</label>
             <select id="tipoDocumento" name="tipoDocumento" required>
-              <option value="DNI">Tipo de indentificación</option>
-              <option value="DNI">Cedula</option>
-              <option value="DNI">Cedula de Extranjeria</option>
-              <option value="Pasaporte">Tarjeta de Identidad</option>
-              <option value="Carnet de Identidad">NUIP</option>
+              <option value="tipo_de_indentificacion">Tipo de indentificación</option>
+              <option value="Cedula">Cedula</option>
+              <option value="cedula de Extranjeria">Cedula de Extranjeria</option>
+              <option value="tarjeta de Identidad">Tarjeta de Identidad</option>
+              <option value="NUIP">NUIP</option>
+              <option value="Pasaporte">Pasaporte</option>
             </select>
         
             <label for="numeroDocumento">Número de Documento:</label>
@@ -275,7 +277,29 @@
             <input type="date" id="fechaNacimiento" name="fechaNacimiento" required>
        </section>
        <section class="container__questions">
-        
+        <h2 class="title__questions">Preguntas Frecuentes</h2>
+        <div class="accordion">¿Que es una hackathon?</div>
+        <div class="panel">
+            <p>Una hackathon es un evento en el que programadores, diseñadores, desarrolladores y otros profesionales se reúnen para colaborar de manera intensiva y creativa en la creación de software o soluciones tecnológicas. Durante una hackathon, los participantes trabajan en equipos y tienen un tiempo limitado (generalmente de varias horas a varios días) para desarrollar un proyecto desde cero.</p><br>
+            <p>El objetivo de una hackathon puede variar, pero generalmente implica resolver un problema o desarrollar una idea innovadora utilizando la tecnología. Los participantes trabajan de manera colaborativa, compartiendo conocimientos y habilidades para crear un producto funcional al final del evento. Esto implica la programación, el diseño, la planificación y la presentación de la solución.</p>    
+        </div>
+
+            <div class="accordion">¿Cuál es el objetivo de la Hackathon de Taxis Libres?</div>
+            <div class="panel">
+            <p>Buscamos generar espacios creativos para que los colombianos puedan desarrollar sus ideas y demostrar su talento resolviendo uno de estos cinco aspectos claves en temas de movilidad, tecnología y sostenibilidad:</p> <br>
+
+                <li>Transporte aliado para la seguridad en las ciudades.</li>
+                <li>Soluciones que incrementen las utilidades a los conductores y propietarios.</li>
+                <li>Soluciones donde los taxis aporten a la optimización de la logística en ciudades inteligentes.</li>
+                <li>Alternativas para aportar a la conservación del medio ambiente.</li>
+                <li>Soluciones que mejoren las experiencias para usuarios y conductores por medio de analítica predictiva.
+            </div>
+
+            <div class="accordion">¿Quién puede participar en la hackathon y cuándo se realizará?</div>
+            <div class="panel">
+            <p>Es una maratón de desarrollo virtual donde se reunirán programadores, diseñadores, data scientist's, mercadólogos, economistas, financieros y todos aquellos apasionados por la innovación y la creatividad.
+            <p>Durante tres días harán un trabajo colaborativo, para construir soluciones a los retos propuestos de movilidad en Colombia contado con las últimas tecnologías, productos, herramientas y servicios de Taxis Libres y de nuestros patrocinadores y aliados.</p>
+            </div>
        </section>
     <footer class="footer">
         <section class="contenedor__img--footer">
@@ -314,7 +338,6 @@
         </section>
         <p class="copyright__footer">@2023 Taxis Libres.</p>
     </footer>
-    <script src="./js/main.js"></script>
+    <script src="./js/main.js"></script>    
 </body>
-
 </html>
